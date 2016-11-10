@@ -8,6 +8,14 @@ namespace COMP229_F2016_Lesson9.Models
 
     public partial class Album
     {
+        /// <summary>
+        /// This constructor takes one argument title which sets the Title property to its value
+        /// </summary>
+        /// <param name="title"></param>
+        public Album(String title)
+        {
+            this.Title = title; 
+        }
         public int AlbumId { get; set; }
 
         public int GenreId { get; set; }
